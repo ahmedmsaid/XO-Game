@@ -1,0 +1,15 @@
+F:\College\XO\XO_Game\XO_Game\bin\Debug\net6.0\XO_Game.exe
+F:\College\XO\XO_Game\XO_Game\bin\Debug\net6.0\XO_Game.deps.json
+F:\College\XO\XO_Game\XO_Game\bin\Debug\net6.0\XO_Game.runtimeconfig.json
+F:\College\XO\XO_Game\XO_Game\bin\Debug\net6.0\XO_Game.dll
+F:\College\XO\XO_Game\XO_Game\bin\Debug\net6.0\XO_Game.pdb
+F:\College\XO\XO_Game\XO_Game\obj\Debug\net6.0\XO_Game.csproj.AssemblyReference.cache
+F:\College\XO\XO_Game\XO_Game\obj\Debug\net6.0\XO_Game.GeneratedMSBuildEditorConfig.editorconfig
+F:\College\XO\XO_Game\XO_Game\obj\Debug\net6.0\XO_Game.AssemblyInfoInputs.cache
+F:\College\XO\XO_Game\XO_Game\obj\Debug\net6.0\XO_Game.AssemblyInfo.cs
+F:\College\XO\XO_Game\XO_Game\obj\Debug\net6.0\XO_Game.csproj.CoreCompileInputs.cache
+F:\College\XO\XO_Game\XO_Game\obj\Debug\net6.0\XO_Game.dll
+F:\College\XO\XO_Game\XO_Game\obj\Debug\net6.0\refint\XO_Game.dll
+F:\College\XO\XO_Game\XO_Game\obj\Debug\net6.0\XO_Game.pdb
+F:\College\XO\XO_Game\XO_Game\obj\Debug\net6.0\XO_Game.genruntimeconfig.cache
+F:\College\XO\XO_Game\XO_Game\obj\Debug\net6.0\ref\XO_Game.dll
