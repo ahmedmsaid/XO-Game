@@ -7,3 +7,4 @@ Training on C#
 - only valid inputs are X or O (capital or small)
 - Can not overwrite an already played on square
 - change console colors for winner or tie
+- almost clean and readable code
