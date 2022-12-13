@@ -15,7 +15,7 @@
 
             while (n > 0)
             {
-                Console.Write("Enter X or O: ");
+                Console.Write("Enter your decision: ");
                 char.TryParse(Console.ReadLine(), out XorO);
 
                 while (!game.IsDecisionCorrect(XorO))
@@ -25,16 +25,22 @@
 
                 }
 
-                game.SetDecision(XorO);
+                while (game.CheckLastDecision(XorO))
+                {
+                    Console.Write($"Not {game.GetLastDecision()} turn: ");
+                    char.TryParse(Console.ReadLine(), out XorO);
+                }
+
+                game.SetDecision(XorO);   
 
                 Console.WriteLine();
 
                 Console.Write("Enter a place number: ");
                 int.TryParse(Console.ReadLine(), out input);
 
-                while (game.IsPlaceAlreadyChecked(input))
+                while (game.IsValidOrPlaceAlreadyChecked(input))
                 {
-                    Console.WriteLine("Already Checked, Enter a place number: ");
+                    Console.Write("Invalid or already Checked, Enter a place number: ");
                     int.TryParse(Console.ReadLine(), out input);
                 }
 
@@ -50,6 +56,7 @@
                 {
                     Console.ForegroundColor= ConsoleColor.Green;
                     Console.WriteLine("X wins");
+                    Console.ForegroundColor= ConsoleColor.Gray;
                     break;
                 }
 
@@ -57,6 +64,7 @@
                 {
                     Console.ForegroundColor= ConsoleColor.Green;
                     Console.WriteLine("O wins");
+                    Console.ForegroundColor= ConsoleColor.Gray;
                     break;
                 }
 

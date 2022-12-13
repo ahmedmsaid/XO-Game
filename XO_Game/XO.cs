@@ -8,6 +8,8 @@
 
         private char decision;
 
+        private char lastDecision = 'e';
+
         private char[,] table =
         {
             {'1', '2', '3'},
@@ -36,6 +38,33 @@
             Console.WriteLine($"{table[2, 0]} | {table[2, 1]} | {table[2, 2]}");
         }
 
+        public bool CheckLastDecision(char decision)
+        {
+            if(lastDecision == decision || lastDecision == decision+32 || lastDecision == decision-32)
+            {
+                return true;
+            }
+
+            lastDecision = decision;
+
+            return false;
+        }
+
+        public void ChangeColor() {
+            if (this.decision == 'X' || this.decision == 'x') Console.ForegroundColor = ConsoleColor.Yellow;
+            else Console.ForegroundColor = ConsoleColor.Cyan;
+        }
+
+        public void ResetColor()
+        {
+            Console.ForegroundColor = ConsoleColor.Gray;
+        }
+
+        public char GetLastDecision()
+        {
+            return lastDecision;
+        }
+
         public void SetDecision(char decision)
         {
             if (decision == 'X' || decision == 'x') this.decision = decisions[0];
@@ -52,7 +81,7 @@
             else return false;
         }
 
-        public bool IsPlaceAlreadyChecked(int key)
+        public bool IsValidOrPlaceAlreadyChecked(int key)
         {
 
             foreach (var item in table)
